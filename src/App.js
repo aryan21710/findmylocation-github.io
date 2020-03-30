@@ -1,7 +1,9 @@
 import React from 'react';
-import Mylocation from './Mylocation'
+import ReactDOM from "react-dom";
+import Mylocation from './Mylocation';
 
-function App() {
+
+const App=()=>{
   return (
     <div className="App">
       <Mylocation/>
@@ -9,4 +11,6 @@ function App() {
   );
 }
 
-export default App;
+
+ReactDOM.render(<App />, document.getElementById("root"));
+
